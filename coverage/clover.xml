@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1687421674359" clover="3.2.0">
+  <project timestamp="1687421674359" name="All files">
+    <metrics statements="174" coveredstatements="154" conditionals="86" coveredconditionals="68" methods="56" coveredmethods="42" elements="316" coveredelements="264" complexity="0" loc="174" ncloc="174" packages="8" files="10" classes="10"/>
+    <package name="lib">
+      <metrics statements="12" coveredstatements="4" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="middleware.js" path="/Users/feneel/IdeaProjects/customer_operations/lib/middleware.js">
+        <metrics statements="12" coveredstatements="4" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.adapters.repositories">
+      <metrics statements="20" coveredstatements="17" conditionals="13" coveredconditionals="9" methods="11" coveredmethods="7"/>
+      <file name="customer-repository.js" path="/Users/feneel/IdeaProjects/customer_operations/src/adapters/repositories/customer-repository.js">
+        <metrics statements="20" coveredstatements="17" conditionals="13" coveredconditionals="9" methods="11" coveredmethods="7"/>
+        <line num="2" count="6" type="cond" truecount="3" falsecount="0"/>
+        <line num="3" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="4" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="8" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="12" count="6" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="33" count="6" type="stmt"/>
+        <line num="34" count="6" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.adapters.rest_apis">
+      <metrics statements="8" coveredstatements="8" conditionals="7" coveredconditionals="6" methods="1" coveredmethods="1"/>
+      <file name="index.js" path="/Users/feneel/IdeaProjects/customer_operations/src/adapters/rest_apis/index.js">
+        <metrics statements="8" coveredstatements="8" conditionals="7" coveredconditionals="6" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="cond" truecount="3" falsecount="0"/>
+        <line num="3" count="2" type="cond" truecount="3" falsecount="1"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.adapters.rest_apis.customers">
+      <metrics statements="65" coveredstatements="61" conditionals="40" coveredconditionals="35" methods="21" coveredmethods="18"/>
+      <file name="get-customer.js" path="/Users/feneel/IdeaProjects/customer_operations/src/adapters/rest_apis/customers/get-customer.js">
+        <metrics statements="22" coveredstatements="18" conditionals="13" coveredconditionals="11" methods="9" coveredmethods="7"/>
+        <line num="2" count="4" type="cond" truecount="3" falsecount="0"/>
+        <line num="3" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="4" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/feneel/IdeaProjects/customer_operations/src/adapters/rest_apis/customers/index.js">
+        <metrics statements="11" coveredstatements="11" conditionals="7" coveredconditionals="6" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="cond" truecount="3" falsecount="0"/>
+        <line num="3" count="2" type="cond" truecount="3" falsecount="1"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+      </file>
+      <file name="post-customer.js" path="/Users/feneel/IdeaProjects/customer_operations/src/adapters/rest_apis/customers/post-customer.js">
+        <metrics statements="32" coveredstatements="32" conditionals="20" coveredconditionals="18" methods="11" coveredmethods="10"/>
+        <line num="2" count="4" type="cond" truecount="3" falsecount="0"/>
+        <line num="3" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="4" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="4" type="cond" truecount="3" falsecount="0"/>
+        <line num="12" count="4" type="cond" truecount="3" falsecount="1"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="21" count="8" type="stmt"/>
+        <line num="22" count="8" type="stmt"/>
+        <line num="23" count="8" type="stmt"/>
+        <line num="24" count="8" type="stmt"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="27" count="4" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
+        <line num="36" count="8" type="stmt"/>
+        <line num="55" count="8" type="stmt"/>
+        <line num="56" count="8" type="stmt"/>
+        <line num="57" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="58" count="6" type="stmt"/>
+        <line num="59" count="2" type="stmt"/>
+        <line num="60" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.domain.models">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="customer.js" path="/Users/feneel/IdeaProjects/customer_operations/src/domain/models/customer.js">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="6" type="stmt"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="6" count="8" type="stmt"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="8" count="8" type="stmt"/>
+        <line num="9" count="8" type="stmt"/>
+        <line num="12" count="6" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.domain.services">
+      <metrics statements="26" coveredstatements="25" conditionals="13" coveredconditionals="12" methods="13" coveredmethods="11"/>
+      <file name="customer-service.js" path="/Users/feneel/IdeaProjects/customer_operations/src/domain/services/customer-service.js">
+        <metrics statements="26" coveredstatements="25" conditionals="13" coveredconditionals="12" methods="13" coveredmethods="11"/>
+        <line num="2" count="6" type="cond" truecount="3" falsecount="0"/>
+        <line num="3" count="12" type="cond" truecount="1" falsecount="1"/>
+        <line num="4" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="20" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="12" count="6" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="18" count="8" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="23" count="6" type="stmt"/>
+        <line num="24" count="6" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="32" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="40" count="4" type="stmt"/>
+        <line num="44" count="4" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
+        <line num="49" count="6" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.infra">
+      <metrics statements="13" coveredstatements="12" conditionals="7" coveredconditionals="6" methods="2" coveredmethods="1"/>
+      <file name="app.js" path="/Users/feneel/IdeaProjects/customer_operations/src/infra/app.js">
+        <metrics statements="13" coveredstatements="12" conditionals="7" coveredconditionals="6" methods="2" coveredmethods="1"/>
+        <line num="2" count="2" type="cond" truecount="3" falsecount="0"/>
+        <line num="3" count="4" type="cond" truecount="3" falsecount="1"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.utils">
+      <metrics statements="23" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="3"/>
+      <file name="errors.js" path="/Users/feneel/IdeaProjects/customer_operations/src/utils/errors.js">
+        <metrics statements="23" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="3"/>
+        <line num="2" count="6" type="stmt"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="47" count="6" type="stmt"/>
+        <line num="50" count="2" type="stmt"/>
+        <line num="51" count="2" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
+        <line num="53" count="2" type="stmt"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="69" count="6" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
