@@ -4,11 +4,11 @@ export const app = express();
 
 //shows errors in ts files
 require('source-map-support').install();
-import {router} from "../adapters/rest_apis";
+import customerRoutes from "./rest_api/routes/customerRoutes";
 
 app.use(bodyParser());
 
-app.use(router)
+app.use(customerRoutes);
 
 app.get('/', (req, res) => {
     res.send('Hello World!');

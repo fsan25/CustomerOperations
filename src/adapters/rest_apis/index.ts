@@ -1,8 +1,2 @@
-import express from "express";
-
-export const router = express.Router();
-
-import {router as CustomerRoutes} from "./customers/index";
-
-
-router.use(CustomerRoutes);
+// This file previously handled routing, but routing is now handled in infra/rest_api/routes/customerRoutes.ts
+// Export controllers/handlers here if needed by other parts of the app.
