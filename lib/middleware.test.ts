@@ -26,7 +26,7 @@ describe('ErrorHandlingMiddlewareFunction', () => {
           code: 'badRequest',
           httpStatus: 400,
           failures: 'fail',
-          message: 'An internal error was encountered processing the request',
+          message: 'fail',
           serverDateTime: expect.any(String),
         })
       })
@@ -60,7 +60,7 @@ describe('ErrorHandlingMiddlewareFunction', () => {
           code: 'notFound',
           httpStatus: 404,
           failures: 'not found',
-          message: 'Resource not found',
+          message: 'not found',
           serverDateTime: expect.any(String),
         })
       })

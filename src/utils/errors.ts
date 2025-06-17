@@ -38,14 +38,17 @@ export class InternalServerError extends Error implements  APIError {
     
 }
 export class FailedRequestBodyError extends Error implements  APIError {
-
     constructor(errors?: Ajv.ErrorObject[]| string) {
-        super("badRequest");
+        super(typeof errors === 'string' ? errors : "badRequest");
         this.failures = errors;
+        if (typeof errors === 'string') {
+            this.message = errors;
+        } else {
+            this.message = "An internal error was encountered processing the request";
+        }
     }
     code = "badRequest";
     httpStatus = 400;
-    message = "An internal error was encountered processing the request";
     failures : any;
     response(): Record<any, any> {
         return {
@@ -61,14 +64,17 @@ export class FailedRequestBodyError extends Error implements  APIError {
 
 }
 export class NotFoundError extends Error implements  APIError {
-
     constructor(errors?: Ajv.ErrorObject[]| string) {
-        super("notFound");
+        super(typeof errors === 'string' ? errors : "notFound");
         this.failures = errors;
+        if (typeof errors === 'string') {
+            this.message = errors;
+        } else {
+            this.message = "Resource not found";
+        }
     }
     code = "notFound";
     httpStatus = 404;
-    message = "Resource not found";
     failures : any;
     response(): Record<any, any> {
         return {
