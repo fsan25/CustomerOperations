@@ -27,4 +27,5 @@
 
 ### Improvements
 
-- Would have liked to separate Routing logic from Adapters and also use Middlewares as opposed to try catching in the adapters
+- [x] Separate routing logic from adapters to enhance modularity and maintainability.
+- [x] Implement middleware for error handling instead of using try-catch blocks within adapters, improving code clarity and reusability.

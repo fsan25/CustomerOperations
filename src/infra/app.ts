@@ -6,7 +6,8 @@ export const app = express();
 require('source-map-support').install();
 import customerRoutes from "./rest_api/routes/customerRoutes";
 
-app.use(bodyParser());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(customerRoutes);
 
