@@ -1,0 +1,63 @@
+@startuml
+' Hexagonal Architecture UML for Customer Operations Service
+
+skinparam componentStyle rectangle
+skinparam packageStyle rect
+skinparam shadowing true
+skinparam roundcorner 20
+skinparam defaultTextAlignment center
+skinparam backgroundColor #F9F9F9
+skinparam ArrowColor #2D8CFF
+skinparam ArrowThickness 2
+skinparam BoxPadding 10
+skinparam PackageBorderColor #888
+skinparam PackageBackgroundColor #F3F7FA
+skinparam LegendBackgroundColor #E3EFFF
+skinparam LegendBorderColor #2D8CFF
+
+legend left
+  <b>Legend</b>
+  <u>Box</u>:   Component/Module
+  <u>→</u>   Usage/Call/Flow
+  <u>▷</u>   Implements/Extends Interface
+  <u>..→</u>   Depends on
+endlegend
+
+package "Adapters (User-Side)" <<Rectangle>> #E6F7FF {
+  [REST API Controller] as REST #A7D8FF
+  [Routing] as Routing #A7D8FF
+  [Middleware] as Middleware #A7D8FF
+  [Repository Adapter] as RepoAdapter #A7D8FF
+}
+
+package "Domain (Business Logic)" <<Rectangle>> #FFF7E6 {
+  interface CustomerServiceInterface #FFD591
+  [CustomerService] --|> CustomerServiceInterface
+  [Customer] #FFD591
+}
+
+package "Adapters (Server-Side)" <<Rectangle>> #E6F7FF {
+  interface CustomerRepositoryInterface #A7D8FF
+  [CustomerRepository] --|> CustomerRepositoryInterface
+}
+
+' Relationships
+REST --> Routing : uses
+Routing --> Middleware : uses
+Routing --> CustomerServiceInterface : calls
+Middleware --> CustomerServiceInterface : can call
+CustomerService ..> CustomerRepositoryInterface : depends on
+CustomerService --> Customer : operates on
+RepoAdapter --> CustomerRepositoryInterface : implements
+
+' Infrastructure
+package "Infra/Utils" <<Rectangle>> #F6FFED {
+  [ExpressApp] #B7EB8F
+  [ErrorUtils] #B7EB8F
+}
+
+REST --> ExpressApp : registered in
+CustomerServiceInterface <.. REST : port
+CustomerRepositoryInterface <.. RepoAdapter : port
+
+@enduml
