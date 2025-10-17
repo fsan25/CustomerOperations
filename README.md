@@ -7,18 +7,18 @@
 `npm test` to run unit + integration tests and see coverage
 
 
-#Key points
+# Key points
 
-###Hexagonal Architecture
+### Hexagonal Architecture
 
-####+ves
+#### +ves
 - Helps separate the business/domain logic of the app  
 - Separation of Concerns is very high, making it easily modifiable and testable
 - Pretty SOLID Implementation overall - adheres to principles like Dependency Inversion and Interface Segregation 
 - See `https://blog.octo.com/hexagonal-architecture-three-principles-and-an-implementation-example/` for some pretty pictures
 
 
-###Notes
+#### -ves 
  
 - Assumed that `employeeId` refers to the `customerId`, since the `POST` endpoint does not return an ID.
 - Ran out of time in the end so opted to use a framework `Jest` as opposed to `Mocha`+`Chai` to implement the testing logic
@@ -29,3 +29,5 @@
 
 - [x] Separate routing logic from adapters to enhance modularity and maintainability.
 - [x] Implement middleware for error handling instead of using try-catch blocks within adapters, improving code clarity and reusability.
+- [ ] Implement logger 
+- [ ] Implement Code Documentation 

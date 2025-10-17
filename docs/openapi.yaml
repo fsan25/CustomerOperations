@@ -4,9 +4,9 @@ info:
   title: Customer management API
   contact:
     name: API Test
-    email: adam.faulkner@anz.com
+    email: feneel.sanghavi@gmail.com
   license:
-    name: ANZ License
+    name: MIT License
   description: >-
     Test API to save and retrieve customers
 servers:
